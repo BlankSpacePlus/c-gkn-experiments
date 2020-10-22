@@ -1,4 +1,4 @@
-# 第六章 集合数据与数组
+# 实验六 函数
 
 1.代码如下：
 ```c
@@ -30,6 +30,6 @@
 
 ```
 
-[Chapter07 模块化与函数](/Chapter07.md)
+[Experiment7 指针](/Experiment7.md)
 
 [返回首页](/README.md)

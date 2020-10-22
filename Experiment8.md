@@ -1,4 +1,4 @@
-# 第七章 模块化与函数
+# 实验八 结构体
 
 1.代码如下：
 ```c
@@ -30,6 +30,6 @@
 
 ```
 
-[Chapter08 地址操作与指针](/Chapter08.md)
+[Experiment9 预编译和宏定义](/Experiment9.md)
 
 [返回首页](/README.md)

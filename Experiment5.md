@@ -1,4 +1,4 @@
-# 第五章 迭代计算与循环结构
+# 实验五 数组与字符串
 
 1.代码如下：
 ```c
@@ -199,6 +199,6 @@ int main() {
 }
 ```
 
-[Chapter06 集合数据与数组](/Chapter06.md)
+[Experiment6 函数](/Experiment6.md)
 
 [返回首页](/README.md)

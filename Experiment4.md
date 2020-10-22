@@ -1,4 +1,4 @@
-# 第四章 逻辑判断与选择结构
+# 实验四 循环控制结构
 
 1.代码如下：
 ```c
@@ -158,6 +158,6 @@ int main() {
 }
 ```
 
-[Chapter05 迭代计算与循环结构](/Chapter05.md)
+[Experiment5 数组与字符串](/Experiment5.md)
 
 [返回首页](/README.md)

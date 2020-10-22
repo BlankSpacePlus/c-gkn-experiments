@@ -1,4 +1,4 @@
-# 第一章 计算机及程序设计概述
+# 实验一 熟悉实验环境
 
 1.代码如下：
 ```c
@@ -34,6 +34,6 @@ int main() {
 }
 ```
 
-[Chapter02 信息编码与数据类型](/Chapter02.md)
+[Experiment2 简单程序设计](/Experiment2.md)
 
 [返回首页](/README.md)

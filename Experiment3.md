@@ -1,4 +1,4 @@
-# 第三章 基本运算与顺序结构
+# 实验三 分支控制结构
 
 1.代码如下：
 ```c
@@ -120,6 +120,6 @@ int main() {
 }
 ```
 
-[Chapter04 逻辑判断与选择结构](/Chapter04.md)
+[Experiment4 循环控制结构](/Experiment4.md)
 
 [返回首页](/README.md)

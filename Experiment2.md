@@ -1,4 +1,4 @@
-# 第二章 信息编码与数据类型
+# 实验二 简单程序设计
 
 1.代码如下：
 ```c
@@ -77,6 +77,6 @@ int main() {
 }
 ```
 
-[Chapter03 基本运算与顺序结构](/Chapter03.md)
+[Experiment3 分支控制结构](/Experiment3.md)
 
 [返回首页](/README.md)
