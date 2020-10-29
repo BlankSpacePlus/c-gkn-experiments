@@ -199,6 +199,6 @@ int main() {
 }
 ```
 
-[Experiment6 函数](/Experiment6.md)
+[Experiment06 函数](/Experiment06.md)
 
 [返回首页](/README.md)

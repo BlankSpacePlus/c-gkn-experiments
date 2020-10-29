@@ -34,6 +34,6 @@ int main() {
 }
 ```
 
-[Experiment2 简单程序设计](/Experiment2.md)
+[Experiment02 简单程序设计](/Experiment02.md)
 
 [返回首页](/README.md)

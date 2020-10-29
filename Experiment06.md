@@ -173,6 +173,6 @@ int main() {
 }
 ```
 
-[Experiment7 指针](/Experiment7.md)
+[Experiment07 指针](/Experiment07.md)
 
 [返回首页](/README.md)

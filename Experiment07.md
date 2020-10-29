@@ -192,6 +192,6 @@ int main() {
 }
 ```
 
-[Experiment8 结构体](/Experiment8.md)
+[Experiment08 结构体](/Experiment08.md)
 
 [返回首页](/README.md)
