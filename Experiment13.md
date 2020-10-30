@@ -84,7 +84,7 @@ unsigned long segmenty(unsigned long n, unsigned long m, unsigned long step) {
 
 int main(int argc, char *argv[]) {
     int my_id, num_process, i;
-    unsigned long n = 100000L, temp_sum, y;
+    unsigned long n = 100L, temp_sum, y;
     int name_len;
     char processor_name[MPI_MAX_PROCESSOR_NAME];
     MPI_Status status;
