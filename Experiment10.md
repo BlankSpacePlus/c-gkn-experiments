@@ -44,7 +44,48 @@ int main() {
 
 2.代码如下：
 ```c
+#include <stdio.h>
 
+typedef struct student Student;
+
+struct student  {
+    int id;
+    char name[30];
+    int score[5];
+};
+
+// 测试数据
+// 1 Alice 90 95 100 90 95
+// 2 Bob 77 76 91 80 88
+// 3 Cat 99 99 99 99 99
+int main() {
+    int n = 3, i, j;
+    double temp;
+    Student students[n];
+    double avg[n];
+    FILE *fp;
+    fp = fopen("student.txt", "a+");
+    if (fp == NULL) {
+        printf("文件打开失败");
+        return 0;
+    }
+    for (i = 0; i < n; i++) {
+        temp = 0;
+        scanf("%d %s", &students[i].id, students[i].name);
+        for (j = 0; j < 5; j++) {
+            scanf("%d", &students[i].score[j]);
+            temp += students[i].score[j];
+        }
+        avg[i] = temp / 5.0;
+        fprintf(fp, "%d %s %d %d %d %d %d %lf\n", students[i].id, students[i].name,
+                students[i].score[0],students[i].score[1], students[i].score[2], students[i].score[3],
+                students[i].score[4], avg[i]);
+    }
+    if (fclose(fp) != 0) {
+        printf("文件关闭失败！");
+    }
+    return 0;
+}
 ```
 
 3.代码如下：
@@ -79,7 +120,24 @@ int main() {
 
 4.代码如下：
 ```c
+#include <stdio.h>
 
+int main() {
+    FILE *fpa, *fpb;
+    char text[1000];
+    fpa = fopen("source.txt", "r");
+    fpb = fopen("dest.txt", "a+");
+    if (fpa == NULL || fpb == NULL) {
+        printf("文件打开失败");
+        return 0;
+    }
+    fread(text, sizeof(text), 1, fpa);
+    fwrite(text, sizeof(text), 1, fpb);
+    if (fclose(fpa) != 0 || fclose(fpb) != 0) {
+        printf("文件关闭失败！");
+    }
+    return 0;
+}
 ```
 
 5.代码如下：
@@ -124,7 +182,47 @@ int main() {
 
 6.代码如下：
 ```c
+#include <stdio.h>
 
+typedef struct student Student;
+
+struct student  {
+    int id;
+    char name[30];
+    int score[3];
+};
+
+// 测试数据
+// 1 Alice 90 95 100
+// 2 Bob 77 76 91
+// 3 Cat 99 99 99
+int main() {
+    int n = 5, i, j;
+    double temp;
+    Student students[n];
+    double avg[n];
+    FILE *fp;
+    fp = fopen("stuinfo.txt", "a+");
+    if (fp == NULL) {
+        printf("文件打开失败");
+        return 0;
+    }
+    for (i = 0; i < n; i++) {
+        temp = 0;
+        scanf("%d %s", &students[i].id, students[i].name);
+        for (j = 0; j < 3; j++) {
+            scanf("%d", &students[i].score[j]);
+            temp += students[i].score[j];
+        }
+        avg[i] = temp / 3.0;
+        fprintf(fp, "%d %s %d %d %d %lf\n", students[i].id, students[i].name, students[i].score[0],
+                students[i].score[1], students[i].score[2], avg[i]);
+    }
+    if (fclose(fp) != 0) {
+        printf("文件关闭失败！");
+    }
+    return 0;
+}
 ```
 
 [Experiment11 程序设计思想及范例](/Experiment11.md)
